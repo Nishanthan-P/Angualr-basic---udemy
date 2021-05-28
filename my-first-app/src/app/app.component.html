@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <ol>
+        <li>Created two comp</li>
+      </ol>
+      <hr />
+      <app-servers></app-servers>
+    </div>
+  </div>
+</div>
+<hr />
+<labe>Server Name</labe>
+<input type="text" class="form-control" [(ngModel)]="userName" />
+<p>{{ userName }}</p>
+<button
+  class="btn btn-primary"
+  [disabled]="userName === ''"
+  (click)="userName = ''"
+>
+  Reset user
+</button>
